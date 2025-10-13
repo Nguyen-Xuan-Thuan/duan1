@@ -222,5 +222,44 @@ branch        'main' set up to track           'origin/main'.
     <!-- Step3: Thêm đoạn code sau trước thẻ đóng </body> -->
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <!-- học về các thẻ <talbe>: <tr> = talbe row, <th> = talble header, <td> = talbe data; <thead, tbody, tfoot(cấu trúc bảng rõ ràng, hổ trợ tốt cho công cụ tìm kiếm)  -->
+    <h1>Báo Cáo Bug</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Mô tả</th>
+          <th>Bước thực hiện</th>
+          <th>Kết quả thực tế</th>
+          <th>Kết quả mong đợi</th>
+          <th>Mức độ nghiêm trọng</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>B01</td>
+          <td>
+            Nhập mặt hàng với một số âm nhưng màn hình load lại trang “Chi tiết
+            sản phẩm”.
+          </td>
+          <td>
+            <p>B1: Nhập số lượng mặt hàng là một số âm.</p>
+            <p>B2: Nhấn nút “Add to cart”.</p>
+          </td>
+          <td>Màn hình load lại trang “Chi tiết sản phẩm”.</td>
+          <td>Màn hình thông báo: “Nhập số lượng phù hợp!”.</td>
+          <td>Nhỏ</td>
+        </tr>
+        <tr>
+          <td>B02</td>
+          <td>Giao diện sai font chữ (sai chính tả).</td>
+          <td></td>
+          <td>Lỗi ở mục “GIOHANG” và “LICHSUGIAOHANG”.</td>
+          <td>Hiển thị đúng tên “Giỏ hàng” và “Lịch sử mua hàng”.</td>
+          <td>Nhỏ</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
