@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
     />
+    <link rel="stylesheet" href="css/css.css" />
   </head>
   <body>
     <h1>Anh hùng xạ điêu</h1>
@@ -223,7 +224,7 @@ branch        'main' set up to track           'origin/main'.
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
-    <!-- học về các thẻ <talbe>: <tr> = talbe row, <th> = talble header, <td> = talbe data; <thead, tbody, tfoot(cấu trúc bảng rõ ràng, hổ trợ tốt cho công cụ tìm kiếm)  -->
+    <!-- học về các thẻ <table>: <tr> = talbe row, <th> = talble header, <td> = talbe data; <thead, tbody, tfoot(cấu trúc bảng rõ ràng, hổ trợ tốt cho công cụ tìm kiếm)  -->
     <h1>Báo Cáo Bug</h1>
     <table>
       <thead>
@@ -258,6 +259,81 @@ branch        'main' set up to track           'origin/main'.
           <td>Lỗi ở mục “GIOHANG” và “LICHSUGIAOHANG”.</td>
           <td>Hiển thị đúng tên “Giỏ hàng” và “Lịch sử mua hàng”.</td>
           <td>Nhỏ</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <!-- sử dụng colspan: chỉ định phần tử chiếm bao nhiêu [cột]
+         sử dụng rowspan: chỉ định phần tử chiếm bao nhiêu [hàng] -->
+    <table>
+      <tr>
+        <th>Tên sản phẩm</th>
+        <th colspan="2">Mô tả</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Áo phông</td>
+        <td>Chất liệu</td>
+        <td>Bạc</td>
+      </tr>
+      <tr>
+        <td>Kích thước</td>
+        <td>M,L,XL</td>
+      </tr>
+      <tr>
+        <td>Quần jean</td>
+        <td colspan="2">Quần jean cao cấp, dễ dàng phối đồ</td>
+      </tr>
+    </table>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th class="text-center">Thứ 2</th>
+          <th class="text-center">Thứ 3</th>
+          <th class="text-center">Thứ 4</th>
+          <th class="text-center">Thứ 5</th>
+          <th class="text-center">Thứ 6</th>
+          <th class="text-center">Thứ 7</th>
+          <th class="text-center">Chủ nhật</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="7" class="hitec-td-tkbTuan">BUỔI SÁNG</td>
+        </tr>
+        <tr>
+          <td>Môn 1</td>
+          <td>Môn 2</td>
+          <td>Môn 3</td>
+          <td>Môn 4</td>
+          <td>Môn 5</td>
+          <td>Môn 6</td>
+          <td>Môn 7</td>
+        </tr>
+        <tr>
+          <td colspan="7" class="hitec-td-tkbTuan">BUỔI CHIỀU</td>
+        </tr>
+        <tr>
+          <td>Môn 1</td>
+          <td>Môn 2</td>
+          <td>Môn 3</td>
+          <td>Môn 4</td>
+          <td>Môn 5</td>
+          <td>Môn 6</td>
+          <td>Môn 7</td>
+        </tr>
+        <tr>
+          <td colspan="7" class="hitec-td-tkbTuan">BUỔI TỐI</td>
+        </tr>
+        <tr>
+          <td>Môn 1</td>
+          <td>Môn 2</td>
+          <td>Môn 3</td>
+          <td>Môn 4</td>
+          <td>Môn 5</td>
+          <td>Môn 6</td>
+          <td>Môn 7</td>
         </tr>
       </tbody>
     </table>
