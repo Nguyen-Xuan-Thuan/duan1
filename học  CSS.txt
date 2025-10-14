@@ -19,19 +19,19 @@ h1 {
   visibility: hidden; (ẩn)
   visibility: visible; (hiện) */
 }
-.hitec-td-tkbTuan {
-  font-weight: bold;
-  text-align: center;
-}
-.text-center {
-  text-align: center;
-}
 
 img {
-  transition: 1.5s;
+  transition: 1s;
 }
 
 input:checked ~ img {
-  opacity: 0;
+  /* 1 Muốn biến mất khỏi giao diện
+  display: none; */
+  /* 2 Biến mất khỏi giao diện nhưng vẫn chiếm vị trí
+  opacity: 5%; */
+  /* 4 Làm mờ đi và không tương tác được */
+  ovisibility: hidden; */
+  /* 3 Làm mờ đi  
+  pacity: 0;
   visibility: hidden;
 }
