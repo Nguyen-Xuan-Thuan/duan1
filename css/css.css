@@ -50,10 +50,14 @@ h3.title {
   color: blue;
 }
 
-div p {
+/* div p {
   color: blue;
-}
+} */
 
-.loichuc p {
+/* .loichuc p {
   font-size: 30px;
+} */
+
+div > p {
+  color: red;
 }
