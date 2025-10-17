@@ -61,3 +61,18 @@ h3.title {
 div > p {
   color: red;
 }
+
+/* chọn thẻ h2 nằm sau h1 */
+h1 + h2 {
+  color: blue;
+  text-align: center;
+}
+
+.can-giua + h2 {
+  text-align: center;
+}
+
+/* Chọn tất cả các thẻ h3 nằm sau h1 */
+h1 ~ h3 {
+  text-align: center;
+}
