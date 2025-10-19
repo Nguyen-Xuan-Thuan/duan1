@@ -73,6 +73,40 @@ h1 + h2 {
 }
 
 /* Chọn tất cả các thẻ h3 nằm sau h1 */
-h1 ~ h3 {
+h1 ~ h3,
+h4 {
   text-align: center;
+}
+
+/* [attribute]  ví dụ: [href] chọn tất cả thuộc tính href */
+[href] {
+  color: black;
+}
+
+/* [attribute = value] ví dụ: [target= "_blank"] 
+chọn tất cả các thuộc tính có chính xác giá trị: target= "_blank" */
+a[target="_blank"] {
+}
+
+/* Chọn tất cả các thuộc tính: tile có chứa từ Click3 trong giá trị */
+a[title~="Click3"] {
+  color: blueviolet;
+}
+
+/* attribute|= value VD: title|= pic 
+có từ bắt đầu bằng pic, pic-1-2... */
+[title|="pic"] {
+  color: red;
+}
+
+/* attribute ^= value VD: title ^= ttt 
+title bắt đầu bằng từ ttt ( ko quan tâm space phía sau ) */
+[title^="ttt"] {
+  color: cadetblue;
+}
+
+/* attribute $= value VD: title ^= ttt 
+kết thúc bằng từ 2*/
+[title$="2"] {
+  color: blue;
 }
