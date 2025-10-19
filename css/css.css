@@ -79,9 +79,9 @@ h4 {
 }
 
 /* [attribute]  ví dụ: [href] chọn tất cả thuộc tính href */
-[href] {
+/* [href] {
   color: black;
-}
+} */
 
 /* [attribute = value] ví dụ: [target= "_blank"] 
 chọn tất cả các thuộc tính có chính xác giá trị: target= "_blank" */
@@ -110,3 +110,52 @@ kết thúc bằng từ 2*/
 [title$="2"] {
   color: blue;
 }
+
+a[target="_blank"]:hover {
+  color: red;
+}
+
+/* --------------------------------- */
+/*              Psedou classes              */
+/* Tác dụng lên selector khi di chuột qua */
+a[title="hover"]:hover {
+  color: red;
+  font-size: 40px;
+}
+
+/* Tác dụng lên selector khi nhấn giữ chuột  */
+a[title="active"]:active {
+  color: green;
+  font-size: 30px;
+}
+
+/* Tác dung lên selector khi chưa klick vào truy cập 
+( vd: dùng để đổi màu các trang truyện đã đọc hoặc tập phim đã xem) */
+a[title^="link-visited"]:link {
+  color: blue;
+}
+
+/* Tác dụng lên selector khi đã klick truy cập */
+a[title^="link-visited"]:visited {
+  color: red;
+}
+
+/* Tác dụng lên thẻ <> ko có nội dung */
+.empty:empty {
+  width: 200px;
+  height: 200px;
+  background-color: chocolate;
+}
+.empty {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+/* chọn thẻ id khi trên URL có hash tương ứng
+VD: http://index.html/#mobai */
+h2:target {
+  color: aquamarine;
+}
+
+/* ------------------------------------------- */
