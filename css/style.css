@@ -1,0 +1,49 @@
+.vd1 {
+  width: 100px;
+  height: 100px;
+  /* pandding: 20px (cả 4 hướng)
+     Pandding: 20px 15px (20 px trên dưới, 15px trái phải)
+     Pandding: 20px 15px 10px (20px trên, 15px trái phải, 10px dưới)
+     Pandding: 20px 15px 10px 5px (theo chiều kim đồng hồ) */
+  padding: 20px;
+  background-color: red;
+
+  /* Viền */
+  border: 10px solid green;
+
+  /* Bo viền  */
+  border-radius: 20px;
+}
+
+.hop {
+  background-color: rebeccapurple;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 20px solid pink;
+  border-radius: 30%;
+  margin: 20px;
+  text-align: center;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+}
+.box1 {
+  background-color: bisque;
+  border: 10px solid rgb(131, 0, 120);
+}
+
+.box2 {
+  background-color: green;
+  margin-left: 140px;
+  border: 10px solid black;
+}
+
+.box3 {
+  border: 10px solid red;
+  background-color: cadetblue;
+  margin-left: 280px;
+}

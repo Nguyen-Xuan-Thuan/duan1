@@ -216,3 +216,11 @@ div.type-selector p:only-of-type {
   color: pink;
   font-size: 30px;
 }
+
+/* ------------------------------------------------------------ */
+/*      Psedou classes not(selector)                          */
+
+/*  */
+.top:not(p) {
+  background-color: yellow;
+}
