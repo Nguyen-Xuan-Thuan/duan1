@@ -47,3 +47,93 @@
   background-color: cadetblue;
   margin-left: 280px;
 }
+
+body {
+  background-color: #ddd;
+}
+
+.container h1 {
+  font-size: 40px;
+}
+
+.container p {
+  font-size: 24px;
+
+  /* khoảng cách giữa các dòng */
+  line-height: 1.4;
+}
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+  text-align: center;
+  background-color: #68bd07;
+}
+
+/* ---------------------------------------------- */
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid blanchedalmond;
+  margin-left: -80px;
+}
+
+.avatar:first-child {
+  margin: 0 auto;
+}
+
+.content {
+  background-color: #d19b08;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.item {
+  height: 100px;
+  width: 100px;
+  background-color: #2759e2;
+  text-align: center;
+}
+
+/* ----------------------------------------- */
+/* .box-top {
+  display: flex;
+  flex-direction: column;
+} */
+.box-parent img {
+  width: 200px;
+  height: 200px;
+}
+.box-top h1 {
+  text-align: center;
+}
+.box-parent {
+  min-height: 400px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #2553d18a;
+}
+.box-child {
+  margin-top: 100px;
+  margin-left: 20px;
+  border: 2px solid black;
+}
+/* -------------------------------------------- */
+.boxz {
+  width: 100px;
+  height: 150px;
+  padding: 20px;
+  border: 10px solid red;
+  margin-top: 10px;
+
+  /* Thuộc tính mặc định 
+  width, height sẽ là kích thước của content*/
+  box-sizing: content-box;
+}
+
+.box2z {
+  /* width, height sẽ là kích thước của phần tử */
+  box-sizing: border-box;
+}
