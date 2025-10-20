@@ -54,3 +54,37 @@ h1 ~ h3{
   text-align: center
   ;
 }
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------- */
+/*              Pseudo classes và Child selectors                   */
+
+/* :first-child chọn các thẻ <p> là thẻ con đầu tiền */
+p:first-child {
+  color: red;
+}
+
+/* :last-child Chọn các thẻ <p> là thẻ con cuối cùng */
+p:last-child {
+  color: blue;
+}
+
+/* :nth-child(n) Chon các thẻ <p> là thẻ con thứ n từ trên xuống */
+p:nth-child(3) {
+  color: green;
+}
+
+/* :nth-last-child(n) Chọn các thẻ <p> là thẻ con thứ n từ dưới lên */
+p:nth-last-child(3) {
+  color: chocolate;
+}
+
+/* :only-child Chọn các thẻ <p> là thẻ con duy nhất */
+p:only-child {
+  color: pink;
+  font-size: 30px;
+}

@@ -162,27 +162,57 @@ h2:target {
 /*              Pseudo classes và Child selectors                   */
 
 /* :first-child chọn các thẻ <p> là thẻ con đầu tiền */
-p:first-child {
+div.child-selector p:first-child {
   color: red;
 }
 
 /* :last-child Chọn các thẻ <p> là thẻ con cuối cùng */
-p:last-child {
+div.child-selector p:last-child {
   color: blue;
 }
 
 /* :nth-child(n) Chon các thẻ <p> là thẻ con thứ n từ trên xuống */
-p:nth-child(3) {
+div.child-selector p:nth-child(3) {
   color: green;
 }
 
 /* :nth-last-child(n) Chọn các thẻ <p> là thẻ con thứ n từ dưới lên */
-p:nth-last-child(3) {
+div.child-selector p:nth-last-child(3) {
   color: chocolate;
 }
 
 /* :only-child Chọn các thẻ <p> là thẻ con duy nhất */
-p:only-child {
+div.child-selector p:only-child {
+  color: pink;
+  font-size: 30px;
+}
+
+/* ----------------------------------------------------------------- */
+/*                       Pseudo-classes Type selectors                       */
+
+/*:first-of-type Chọn các thẻ <p> xuất hiện đầu tiền trong thẻ cha */
+div.type-selector p:first-of-type {
+  color: red;
+}
+
+/*:last-of-type Chọn các thẻ <p> xuất hiện cuối cùng trong thẻ cha */
+div.type-selector p:last-of-type {
+  color: blue;
+}
+
+/*:nth-of-type(3) Chọn các thẻ <p> xuất hiện thứ n từ trên xuống trong thẻ cha */
+div.type-selector p:nth-of-type(3) {
+  color: green;
+}
+
+/* :nth-last-of-type(3) Chọn các thẻ <p> xuất hiện thứ n từ dưới lên trong thẻ cha */
+div.type-selector p:nth-last-of-type(3) {
+  color: chocolate;
+}
+
+/* :only-of-type Chọn các thẻ p  xuất hiện duy nhất trong thẻ cha 
+  xuất hiện các thẻ con khác thẻ p vẫn được   */
+div.type-selector p:only-of-type {
   color: pink;
   font-size: 30px;
 }
