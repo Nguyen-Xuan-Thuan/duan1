@@ -88,3 +88,51 @@ p:only-child {
   color: pink;
   font-size: 30px;
 }
+
+/* ----------------------------------------------------------------- */
+/*                       Pseudo-classes Type selectors                       */
+
+/*:first-of-type Chọn các thẻ <p> xuất hiện đầu tiền trong thẻ cha */
+div.type-selector p:first-of-type {
+  color: red;
+}
+
+/*:last-of-type Chọn các thẻ <p> xuất hiện cuối cùng trong thẻ cha */
+div.type-selector p:last-of-type {
+  color: blue;
+}
+
+/*:nth-of-type(3) Chọn các thẻ <p> xuất hiện thứ n từ trên xuống trong thẻ cha */
+div.type-selector p:nth-of-type(3) {
+  color: green;
+}
+
+/* :nth-last-of-type(3) Chọn các thẻ <p> xuất hiện thứ n từ dưới lên trong thẻ cha */
+div.type-selector p:nth-last-of-type(3) {
+  color: chocolate;
+}
+
+/* :only-of-type Chọn các thẻ p  xuất hiện duy nhất trong thẻ cha 
+  xuất hiện các thẻ con khác thẻ p vẫn được   */
+div.type-selector p:only-of-type {
+  color: pink;
+  font-size: 30px;
+}
+
+
+ /* độ dày của chữ */
+  font-weight: 500;
+
+  /* Chiều cao dòng =1.5 lần font size */
+  line-height: 1.5;
+
+  /* letter-spacing: ; Tăng giảm khoảng cách giữa các ký tự */
+  letter-spacing: 5px;
+
+  /* word-spacing: ; Tăng giảm khoảng cách giữa các " TỪ " */
+  word-spacing: 10px;
+
+  /* text-align: justify (Căn giàn đều hai bên)
+     text-align: center (căn giữa) */
+  display: block;
+  text-align: center;

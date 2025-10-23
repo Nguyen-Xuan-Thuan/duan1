@@ -1,5 +1,6 @@
-html {
-  font-size: 62.5%;
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .vd1 {
   width: 100px;
@@ -148,13 +149,11 @@ a {
   text-align: center;
   background-color: #fefae0;
   color: black;
-  border: 0.1rem solid black;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1.5rem;
-  margin: 0 1.5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 0 15px;
   font-weight: bolder;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a:hover {
@@ -164,9 +163,14 @@ a:hover {
 
 .menu {
   margin: 0 auto;
-  padding: 0.1rem 0;
+  padding: 10px 0;
   text-align: center;
   width: 80vw;
   background-color: #bdb1b1;
   border-radius: 999px;
 }
+
+/* --------------------------------------------------------- */
+/*Sans serif : Font ko có gai ở đầu chữ cái 
+  Serif : Font có gai ở đầu
+  Monospace : Font có cùng độ rộng */

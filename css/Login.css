@@ -1,0 +1,120 @@
+a {
+  text-decoration: none;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+  /* text-align: justify (Căn giàn đều hai bên)
+     VD: 1 đoạn văn bản khi xuống dòng đôi khi từ ngắn từ dài sẽ 
+     để lại khoảng trống nhưng từ tiếp theo ko thể chèn vào chỗ trống 
+     đó sài justify để căn đều 2 bên
+     text-align: center (căn giữa) */
+  text-align: justify;
+}
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+
+  /* độ dày của chữ */
+  font-weight: 500;
+
+  /* Chiều cao dòng =1.5 lần font size */
+  line-height: 1.5;
+
+  /* letter-spacing: ; Tăng giảm khoảng cách giữa các ký tự */
+  letter-spacing: 5px;
+
+  /* word-spacing: ; Tăng giảm khoảng cách giữa các " TỪ " */
+  word-spacing: 10px;
+
+  /* text-align: justify (Căn giàn đều hai bên)
+     text-align: center (căn giữa) */
+  display: block;
+  text-align: center;
+}
+
+/* -------------------------------------------------------- */
+/*                     TYPOGRAPHY IN CSS */
+a {
+  /* Bỏ gạch chân */
+  text-decoration: none;
+
+  /* Thêm gạch chân */
+  text-decoration: underline;
+
+  /* Thêm gạch ngang */
+  text-decoration: line-through;
+
+  /* Gạch trên đầu */
+  text-decoration: overline;
+
+  /*Có thể định kiểu dấu gạch chân, màu sắc, kích thước  */
+  text-decoration: underline dotted red 5px;
+
+  text-decoration: none;
+
+  /* Thuộc tính text-indent Thụt lề */
+  text-indent: -400px;
+  text-indent: 400px;
+
+  /* Thuộc tính text-transform  */
+  /* Viết hoa chử cái đầu tiên */
+  text-transform: capitalize;
+
+  /* Viết thường toàn bộ text */
+  text-transform: lowercase;
+
+  /* Viết hoa toàn bộ text */
+  text-transform: uppercase;
+
+  /* Thuộc tính white-space quy đinh về khoảng trắng khi code */
+  /* trạng thái mặc định */
+  white-space: none;
+
+  /* Không xuống dòng ( kể cả chạm tới lề ) */
+  white-space: nowrap;
+
+  /* Giữ nguyên định dạng code giống thẻ <pre> */
+  white-space: pre;
+
+  /* Giữ định dạng theo line (enter)
+      -Tất cả dấu khoảng trắng thừa mỗi dòng trong văn
+       bản sẽ bị loại bỏ
+      -Dòng mới (xuống dòng) được giữ nguyên*/
+  white-space: pre-line;
+
+  /* Thuộc tính Word-break */
+  /* văn bản tự động xuống dòng khi tới giới hạn
+  VD: người dùng cố ý nhập 1 chuỗi ký tự dài có thể gây vỡ giao diện
+  vì text ko bị xuống dòng */
+  word-break: break-all;
+}
+
+.shadow {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+
+  /* Thuộc tính text-shadow bóng đổ text */
+  /* text-shadow: horizantol, vertical, blur, color; */
+  text-shadow: 0 -20px 3px blue;
+}
+
+.box {
+  width: 400px;
+  height: 300px;
+
+  /* Thuộc tính overflow  */
+  /* overflow: Visible (default) Thuộc tính mặc định: 
+    Hiển thị nôi dung kể cả vượt box chứa
+    overflow: hidden | Ẩn nội dung: khi nội dung vượt box chứa
+    overflow: scroll | Tạo thanh cuộn: Luôn hiển thị vùng thanh cuốn
+    overflow: auto   | Nếu nội dung ngắn -> ko tạo scroll bar
+                     | Nếu nội dung vượt box chứa -> tự động sinh ra scroll bar*/
+
+  overflow: auto;
+}
