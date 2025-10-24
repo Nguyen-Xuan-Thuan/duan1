@@ -268,3 +268,42 @@ body {
     background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   }
 }
+
+/* --------------------------------------------------------------------- */
+/*                        Background-origin                */
+.img-origin {
+  width: 300px;
+  height: 200px;
+  background-image: url(../img/avatar3.jpg);
+  border: 20px solid black;
+  padding: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* background-origin:
+- Xác định *vùng bắt đầu tính tọa độ* cho ảnh nền (background image).
+- Ảnh nền không bị to/nhỏ, chỉ bị "dời" vào trong hoặc ra ngoài
+  tùy thuộc vào vùng được chọn.
+- Có 3 giá trị chính:
+    ▪ border-box   → Ảnh bắt đầu từ mép ngoài của viền.
+    ▪ padding-box  → Ảnh bắt đầu bên trong viền (bỏ qua border). [mặc định]
+    ▪ content-box  → Ảnh chỉ nằm trong vùng nội dung (bỏ padding + border).
+
+ Hiểu đơn giản:
+→ background-origin = “Ảnh nằm trong vùng nào của hộp?” 
+*/
+  background-origin: content-box;
+  background-origin: border-box; /* Thay đổi gốc tính */
+  background-origin: padding-box;
+
+  /* background-position:
+- Xác định vị trí hiển thị của ảnh nền trong vùng đó.
+- Có thể dùng từ khóa hoặc tọa độ:
+    ▪ left / center / right
+    ▪ top / center / bottom
+    ▪ hoặc giá trị cụ thể: 20px 50%, v.v.
+
+💡 Hiểu đơn giản:
+→ background-position = “Ảnh nằm ở đâu trong vùng đó?”
+*/
+}
