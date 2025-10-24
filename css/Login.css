@@ -117,4 +117,134 @@ a {
                      | Nếu nội dung vượt box chứa -> tự động sinh ra scroll bar*/
 
   overflow: auto;
+
+  /* Thuộc tính scroll-behavior */
+  /* scroll-behavior : auto (default) : khi lăn tới điểm giới hạn
+    của nội dung thì tự động lăn tiếp nội dung bên ngoài
+    scroll-behavior: contain chỉ lăn tới điểm giới hạn trong box đó */
+  scroll-behavior: auto;
+}
+
+/*--------------------------------------------------------------- */
+/*                 custom scrollbar css           */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* -------------------------------------------------------------- */
+/* Tạo dấu 3 chấm khi nội dung vượt quá */
+.overflow {
+  text-overflow: ellipsis; /* tạo dấu ... */
+  background-color: rgb(13, 104, 13, 0.4);
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+
+ul {
+  font-size: 40px;
+}
+li {
+  list-style-type: none;
+  margin-top: 4px;
+}
+
+.fa-house {
+  color: rgb(255, 196, 0);
+}
+.fa-facebook {
+  color: #0866ff;
+}
+.fa-youtube {
+  color: #ff0033;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*-------------------------------------------------  */
+/*                  BACKGROUND                 */
+
+body {
+  /* background-image: url(../img/avatar3.jpg); */
+
+  /* Thuộc tính background-repeat */
+  /* BG ko lặp lại */
+  background-repeat: no-repeat;
+
+  /* BG lặp lại ( mặc định ) */
+  background-repeat: repeat;
+
+  /* Thuộc tính background-size */
+  /* cover 
+  -Ảnh vừa khớp khung hình 
+  -Giữ nguyên tỉ lệ ảnh (ko bị móp méo)
+  -có thể mất 1 phần ảnh
+  -Ko bị lặp ảnh */
+  background-size: cover;
+
+  /* contain
+  -Ảnh vừa khung hình
+  -Giữ nguyên tỉ lệ ảnh
+  -Ko bị mất ảnh
+  -Nếu có khoảng trống, ảnh sẽ bị lặp lại */
+  background-size: contain;
+
+  /* thuộc tính background-poisition : vị trí bắt đầu đặt ảnh nền */
+  background-position: top;
+}
+
+.boxbg {
+  height: 100px;
+  margin-top: 10px;
+}
+
+/* -------------------------------------------------------------- */
+/* Thuộc tính background-image: linear-gradient() dải nền chuyển sắc*/
+/* linear-gradient(direction (hướng), color-1, color-2,...) 
+   Color-1 % -> (ko áp dụng chuyển sắc tới đoạn %)
+   Direction - điều hướng chuyển màu theo đọo (degree: 45 độ,...
+   background-image: linear-gradient(45deg, color1, color2,...)*/
+
+.box1 {
+  background-image: linear-gradient(#cad2c5, #52796f);
+}
+
+.text-img {
+  color: #ff72f8;
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  margin-top: 20px;
+  width: 500px;
+  height: 200px;
+  overflow: auto;
+  scroll-behavior: contain;
+  background-image: url(../img/avatar1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Thuộc tính background-attachment */
+  /* background-attachment: Scroll (Default) Ảnh tự động cuộn theo trình duyệt khi kéo xuống */
+  /* background-attachment: fixed - Ảnh cố định khi có scroll lên xuông */
+  /* background-attachment: local - Ảnh cố định cục bộ trong bố cục con */
+  background-attachment: local;
 }
