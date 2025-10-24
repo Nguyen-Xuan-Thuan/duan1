@@ -248,3 +248,23 @@ body {
   /* background-attachment: local - Ảnh cố định cục bộ trong bố cục con */
   background-attachment: local;
 }
+
+.text-hl {
+  color: rgb(0, 119, 255);
+}
+
+/* @supports Kiểm tra thuộc tính trong dấu () có hổ trợ hay ko
+   Có hổ trợ thì mới thật hiện */
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .text-hl {
+    color: transparent; /* Làm màu chữ thành trong suốt */
+    /* background-clip: text; 
+  Đổi màu nền phần text, ko hiển thị phần trống ngoài text */
+    background-clip: text;
+
+    /* CSS prefix, do chrome mặc đinh ko hổ trợ */
+    -webkit-background-clip: text;
+
+    background-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  }
+}
