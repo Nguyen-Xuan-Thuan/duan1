@@ -249,6 +249,8 @@ body {
   background-attachment: local;
 }
 
+/* ------------------------------------------------------ */
+/*      Chữ Front End linear Gradient      */
 .text-hl {
   color: rgb(0, 119, 255);
 }
@@ -293,8 +295,8 @@ body {
 → background-origin = “Ảnh nằm trong vùng nào của hộp?” 
 */
   background-origin: content-box;
-  background-origin: border-box; /* Thay đổi gốc tính */
   background-origin: padding-box;
+  background-origin: border-box; /* Thay đổi gốc tính */
 
   /* background-position:
 - Xác định vị trí hiển thị của ảnh nền trong vùng đó.
@@ -306,4 +308,23 @@ body {
 💡 Hiểu đơn giản:
 → background-position = “Ảnh nằm ở đâu trong vùng đó?”
 */
+
+  /* background-clip:
+- Xác định *vùng mà ảnh nền (hoặc màu nền)* sẽ được hiển thị.
+- Nói cách khác: nó quyết định 
+*ảnh nền bị cắt ở đâu* (clip = cắt). */
+  background-clip: content-box;
+}
+
+/* --------------------------------------------------------- */
+/*                 Background Shorthand                        */
+/* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+.bgs {
+  margin-top: 30px;
+  width: 500px;
+  bottom: 50px;
+  padding: 50px;
+  height: 400px;
+  background: red url(../img/avatar3.jpg) center / contain no-repeat padding-box
+    border-box;
 }
