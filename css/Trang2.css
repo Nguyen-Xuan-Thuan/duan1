@@ -1,0 +1,58 @@
+.box2 {
+  width: 150px;
+  height: 150px;
+  margin: 100px;
+  background-color: red;
+  /* --------------------------------------------------------- */
+  /*                        BOX SHADOW                  */
+  /* box-shadow: 60px -16px 5px 10px #6464d471;
+  box-shadow: 60px -16px 5px 10px #6464d471; */
+
+  /* Chọn đổ theo đt, trục x, trục y, blur, màu  */
+  box-shadow: inset 10px 35px 4px 15px yellow;
+
+  /* Đổ nhiều bóng */
+  box-shadow: 160px 0 rgb(28, 186, 88), 0 160px rgb(0, 119, 255),
+    160px 160px rgb(220, 220, 11);
+
+  /* border-radius: 15px; */
+}
+
+/* --------------------------------------------------------- */
+/*                    POINTER-EVENT                        */
+.box {
+  margin-top: 200px;
+}
+.anh-demo {
+  max-height: 200px;
+  width: 200px;
+  /* POINTER-EVENT: 
+  - sử dụng để kiểm soát hoạt động của chuột trên các phần tử HTML
+  - Dùng để ẩn ko cho click vào các thẻ a
+   */
+  pointer-events: none;
+}
+
+a.anh-demo {
+  text-decoration: none;
+  font-size: 20px;
+  background: #12c2e9;
+  display: block;
+  text-align: center;
+}
+
+@supports (
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9)
+  )
+  or (background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9)) {
+  a.anh-demo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #12c2e9;
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  }
+}
